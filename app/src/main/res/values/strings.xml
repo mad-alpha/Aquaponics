@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Aquaponics</string>
+    <string name="welcome">Welcome!</string>
+    <string name="enjoy_shopping_with_us">Enjoy Shopping With Us !</string>
+    <string name="use_your_credentials_to_access">Use Your Credentials To Access</string>
+    <string name="username">Username</string>
+    <string name="Welcome">Welcome!</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="don_t_have_any_account">Don\'t have any account?</string>
+    <string name="register_here">register here</string>
+    <string name="register">Register !</string>
+    <string name="login_here">Login here</string>
+    <string name="already_have_an_account">Already Have An Account?</string>
+    <string name="Register">REGISTER</string>
+    <string name="enter_password_again">Enter Password Again</string>
+    <string name="setup_a_new_account_in_a_minute">Setup A New Account In A Minute</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_phone">Enter Your Phone</string>
+</resources>
