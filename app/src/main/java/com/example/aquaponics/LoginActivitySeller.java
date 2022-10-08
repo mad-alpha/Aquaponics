@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivitySeller extends AppCompatActivity {
 
     Button login;
     EditText username, password;
@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this,RegistrationActivity.class));
+                startActivity(new Intent(LoginActivitySeller.this,RegistrationActivitySeller.class));
             }
         });
 

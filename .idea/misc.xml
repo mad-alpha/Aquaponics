@@ -3,14 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.10847628657921292" />
+        <entry key="app/src/main/res/drawable/brassica_bg.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/circles.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/edit_text_username.xml" value="0.1855" />
+        <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/mybutton.xml" value="0.2345" />
+        <entry key="app/src/main/res/drawable/mysearch.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/selltemp.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/shape.xml" value="0.1855" />
         <entry key="app/src/main/res/drawable/shape1.xml" value="0.1855" />
+        <entry key="app/src/main/res/drawable/start_selling.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/your_rounded_shape.xml" value="0.169" />
+        <entry key="app/src/main/res/font/bungee.xml" value="0.27479949345715493" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.16295928955078126" />
+        <entry key="app/src/main/res/layout/activity_loginseller.xml" value="0.15020263424518743" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.17395983709805252" />
+        <entry key="app/src/main/res/layout/activity_registrationseller.xml" value="0.15020263424518743" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/category_product.xml" value="0.18359020852221214" />
+        <entry key="app/src/main/res/layout/homepage.xml" value="0.30601339054885823" />
       </map>
     </option>
   </component>

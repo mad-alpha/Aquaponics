@@ -11,22 +11,32 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enjoy_shopping_with_us"
+        android:text="@string/start_selling_your_products_online"
         android:textColor="#39404a"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintVertical_bias="0.164" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="230dp"
+        android:src="@drawable/veg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="70dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:src="@drawable/logo1"
@@ -35,22 +45,21 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017"
+        app:layout_constraintVertical_bias="0.027"
         app:shapeAppearanceOverlay="@style/roundimageview"
         tools:ignore="ImageContrastCheck" />
 
 
     <FrameLayout
-        android:id="@+id/frameLayout"
         android:layout_width="310dp"
         android:layout_height="330dp"
-        android:background="@drawable/shape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40">
+        app:layout_constraintVertical_bias="0.417"
+        android:background="@drawable/shape">
 
         <TextView
             android:id="@+id/textView3"
@@ -71,8 +80,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
             android:layout_marginTop="60dp"
-            android:text="@string/use_your_credentials_to_access"
-            android:textColor="#4A4646" />
+            android:textColor="#4A4646"
+            android:text="@string/use_your_credentials_to_access" />
 
         <EditText
             android:id="@+id/username_login_seller"
@@ -100,7 +109,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="160dp"
-            android:autofillHints="password"
             android:background="@drawable/edit_text_username"
             android:drawableStart="@drawable/ic_baseline_lock_24"
             android:hint="@string/password"
@@ -111,24 +119,27 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username_login_seller" />
+            app:layout_constraintTop_toBottomOf="@+id/username_login_seller"
+            android:autofillHints="password"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/login_btn_seller"
             android:layout_width="273dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="220dp"
             android:background="@drawable/circles"
             android:padding="1dp"
-            android:text="@string/login" />
+            android:text="@string/login"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="49dp"
-            android:layout_marginTop="280dp"
+            android:layout_marginTop="270dp"
             android:text="@string/don_t_have_any_account"
             android:textColor="#4A4646"
             android:textSize="13sp" />
@@ -138,23 +149,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="191dp"
-            android:layout_marginTop="280dp"
+            android:layout_marginTop="270dp"
             android:minHeight="48dp"
             android:text="@string/register_here"
-            android:textColor="#109743"
+            android:textColor="#2E7D32"
             android:textSize="13sp" />
 
     </FrameLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="400dp"
-        android:layout_height="230dp"
-        android:src="@drawable/veg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

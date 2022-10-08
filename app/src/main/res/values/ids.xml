@@ -5,9 +5,9 @@
     <item name="imageView2" type="id" />
     <item name="textView3" type="id" />
     <item name="textView4" type="id" />
-    <item name="username_login" type="id" />
-    <item name="password_login" type="id" />
-    <item name="login_btn" type="id" />
+    <item name="username_login_seller" type="id" />
+    <item name="password_login_seller" type="id" />
+    <item name="login_btn_seller" type="id" />
     <item name="textView5" type="id" />
-    <item name="loginHere" type="id" />
+    <item name="LoginHereSeller" type="id" />
 </resources>
