@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,7 +36,12 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(username.getText().toString().equals("Kisaan1") &&
+                        password.getText().toString().equals("Kisaan1")) {
+                    startActivity(new Intent(LoginActivity.this, Homepage.class));
+                } else {
+                    Toast.makeText(LoginActivity.this, "Wrong credentials", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
