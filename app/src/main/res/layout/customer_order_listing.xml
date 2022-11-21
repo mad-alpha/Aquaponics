@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="#c8ead7"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:background="#5CC360"
+                android:elevation="10dp">
+
+                <TextView
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_menu_24" />
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="65dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="right"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_home_24" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo1"
+                    android:layout_marginStart="35dp"
+                    app:shapeAppearanceOverlay="@style/roundimageview"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="right"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_account_circle_24" />
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24" />
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginTop="48dp"
+                    android:autofillHints="search"
+                    android:background="@drawable/mysearch"
+                    android:drawableStart="@drawable/ic_baseline_search_24"
+                    android:hint="Search Product..."
+                    android:inputType=""
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText"
+                    android:elevation="10dp"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Customer Order"
+                android:textColor="#39404a"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/mysearch"
+                android:scaleType="fitCenter"
+                android:src="@drawable/banner"
+                tools:ignore="ImageContrastCheck" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="FILTER BY CATEGORY"
+                    android:gravity="start"
+                    android:textColor="#030404"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#D1CDCD"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="60dp"
+                    android:text="  Confirmed Order"
+                    android:gravity="start"
+                    android:textColor="#807E7E"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText"
+                    app:drawableStartCompat="@drawable/ic_outline_circle_24" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="100dp"
+                    android:text="  Confirmed Order"
+                    android:gravity="start"
+                    android:textColor="#807E7E"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText"
+                    app:drawableStartCompat="@drawable/ic_outline_circle_24" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="140dp"
+                    android:text="  Confirmed Order"
+                    android:gravity="start"
+                    android:textColor="#807E7E"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText"
+                    app:drawableStartCompat="@drawable/ic_outline_circle_24" />
+
+                <Button
+                    android:id="@+id/add_to_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="15dp"
+                    app:drawableStartCompat="@drawable/ic_baseline_delete_24"
+                    android:background="@drawable/circles2"
+                    android:paddingLeft="50dp"
+                    android:textColor="#000000"
+                    android:paddingRight="50dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:text=" Clear Filter"
+                    tools:ignore="HardcodedText" />
+
+                    </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/pdt_ud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Total Orders - (13 )"
+                    android:gravity="start"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#39404a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/shape_grey">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start"
+                    android:text="Order Status :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/confirmed"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="135dp"
+                    android:background="@drawable/circles"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="Confirmed"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="Order No. :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="KSNBZR20220021"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Order Date :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="125dp"
+                    android:gravity="start"
+                    android:text="Jul,20,2022 on 09:51 AM"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="start"
+                    android:text="Grand Total :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="80.00/-"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="180dp"
+                    android:gravity="start"
+                    android:text="Total Items :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="1"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/view_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/circles3"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="0dp"
+                    android:text="View Details"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/shape_grey">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start"
+                    android:text="Order Status :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/confirmed2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="135dp"
+                    android:background="@drawable/circles"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="Confirmed"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="Order No. :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="KSNBZR20220019"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Order Date :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Jul,20,2022 on 10:59 AM"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="start"
+                    android:text="Grand Total :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="202.00/-"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="180dp"
+                    android:gravity="start"
+                    android:text="Total Items :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="2"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/view_details2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/circles3"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="0dp"
+                    android:text="View Details"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/shape_grey">
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start"
+                    android:text="Order Status :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/confirmed3"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="135dp"
+                    android:background="@drawable/circles"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="Confirmed"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="Order No. :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="KSNBZR20220018"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Order Date :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Jul,20,2022 on 09:51 AM"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="start"
+                    android:text="Grand Total :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="485.00/-"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="180dp"
+                    android:gravity="start"
+                    android:text="Total Items :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="3"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/view_details3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/circles3"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="0dp"
+                    android:text="View Details"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/shape_grey">
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start"
+                    android:text="Order Status :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/confirmed4"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="135dp"
+                    android:background="@drawable/circles4"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="Delivered"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="Order No. :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="KSNBZR20220016"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Order Date :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Jul,20,2022 on 05:18 AM"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="start"
+                    android:text="Grand Total :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="855.00/-"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="180dp"
+                    android:gravity="start"
+                    android:text="Total Items :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="2"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/view_details4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/circles3"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="0dp"
+                    android:text="View Details"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_grey">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start"
+                    android:text="Order Status :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/confirmed1"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="135dp"
+                    android:background="@drawable/circles4"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="Delivered"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="Order No. :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="start"
+                    android:text="KSNBZR20220015"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Order Date :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="start"
+                    android:text="Jul,19,2022 on 06:45 PM"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="start"
+                    android:text="Grand Total :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="360.00/-"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="180dp"
+                    android:gravity="start"
+                    android:text="Total Items :"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="start"
+                    android:text="1"
+                    android:textColor="#39404a"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/view_details1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/circles3"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="0dp"
+                    android:text="View Details"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

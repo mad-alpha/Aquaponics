@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#c8ead7"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:background="#5CC360"
+                android:elevation="10dp">
+
+                <TextView
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_menu_24" />
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="65dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="right"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_home_24" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo1"
+                    android:layout_marginStart="35dp"
+                    app:shapeAppearanceOverlay="@style/roundimageview"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+                <TextView
+                    android:id="@+id/profile_fish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="right"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_account_circle_24" />
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="25sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24" />
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginTop="48dp"
+                    android:autofillHints="search"
+                    android:background="@drawable/mysearch"
+                    android:drawableStart="@drawable/ic_baseline_search_24"
+                    android:hint="Search Product..."
+                    android:inputType=""
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText"
+                    android:elevation="10dp"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Fish"
+                android:textColor="#39404a"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/mysearch"
+                android:scaleType="fitCenter"
+                android:src="@drawable/banner"
+                tools:ignore="ImageContrastCheck" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/tomato_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/brassica_bg"
+                    android:elevation="15dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/rohu_banner"
+                    app:shapeAppearanceOverlay="@style/roundimageview1"
+                    tools:ignore="ImageContrastCheck" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="164dp"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#D1CDCD" />
+
+                <TextView
+                    android:id="@+id/pdt1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Rohu"
+                    android:textColor="#39404a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/in_stock_btn_pdt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="42dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/in_stock"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="2dp"
+                    app:fontFamily="sans-serif"
+                    android:text="@string/in_stock" />
+
+                <TextView
+                    android:id="@+id/price_rohu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="82dp"
+                    android:text="₹ 160 per 1 KG"
+                    android:textColor="#5CC360"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/add_to_cart_pdt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/circles"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="0dp"
+                    android:textColor="#FFFFFF"
+                    android:paddingBottom="0dp"
+                    android:text="Add To Cart"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/common_carp_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/brassica_bg"
+                    android:elevation="15dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/common_carp_banner"
+                    app:shapeAppearanceOverlay="@style/roundimageview1"
+                    tools:ignore="ImageContrastCheck" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="164dp"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#D1CDCD" />
+
+                <TextView
+                    android:id="@+id/pdt2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Common Carp"
+                    android:textColor="#39404a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/in_stock_btn_pdt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="42dp"
+                    android:background="@drawable/in_stock"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:textColor="#FFFFFF"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="2dp"
+                    app:fontFamily="sans-serif"
+                    android:text="@string/in_stock" />
+
+                <TextView
+                    android:id="@+id/price_lettuce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="82dp"
+                    android:text="₹ 200 per 1 KG"
+                    android:textColor="#5CC360"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/add_to_cart_pdt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/circles"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="0dp"
+                    android:textColor="#FFFFFF"
+                    android:paddingBottom="0dp"
+                    android:text="Add To Cart"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

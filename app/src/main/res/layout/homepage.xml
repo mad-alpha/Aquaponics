@@ -1,42 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".MainActivity"
+    android:background="#c8ead7"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#E2F8E2"
-    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="92dp"
         android:background="#5CC360"
-        tools:ignore="MissingConstraints"
         android:elevation="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="9dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="6dp"
             android:textSize="25sp"
             app:drawableStartCompat="@drawable/ic_baseline_menu_24" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/home"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="308dp"
+            android:layout_marginEnd="65dp"
             android:layout_marginTop="6dp"
+            android:layout_gravity="end"
             android:textSize="25sp"
             app:drawableStartCompat="@drawable/ic_baseline_home_24" />
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:id="@+id/imageView2"
             android:layout_width="65dp"
             android:layout_height="35dp"
@@ -45,36 +54,34 @@
             android:scaleType="fitCenter"
             android:src="@drawable/logo1"
             android:layout_marginStart="35dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
             app:shapeAppearanceOverlay="@style/roundimageview"
             tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="375dp"
+            android:layout_gravity="end"
             android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
             android:textSize="25sp"
             app:drawableStartCompat="@drawable/ic_baseline_shopping_cart_24" />
 
         <TextView
+            android:id="@+id/profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="340dp"
+            android:layout_marginEnd="45dp"
             android:layout_marginTop="6dp"
+            android:layout_gravity="end"
             android:textSize="25sp"
             app:drawableStartCompat="@drawable/ic_baseline_account_circle_24" />
 
         <EditText
             android:id="@+id/search"
-            android:layout_width="399dp"
+            android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:layout_marginStart="6dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
             android:layout_marginTop="48dp"
             android:autofillHints="search"
             android:background="@drawable/mysearch"
@@ -93,21 +100,16 @@
 
     <TextView
         android:id="@+id/heading"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:textAlignment="center"
         android:text="Welcome to Kisaan Bazar !"
         android:textColor="#39404a"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.10"
         tools:ignore="HardcodedText" />
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <ImageView
         android:id="@+id/one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -115,377 +117,369 @@
         android:background="@drawable/mysearch"
         android:scaleType="fitCenter"
         android:src="@drawable/banner"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
-        app:layout_constraintVertical_bias="0.038"
         tools:ignore="ImageContrastCheck" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout3"
-        android:layout_width="395dp"
-        android:layout_height="45dp"
-        android:background="@drawable/selltemp"
-        android:elevation="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="213dp">
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="259dp"
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="104dp"
-            android:text="Are you a seller ? Register now and start selling your products online !"
-            android:textColor="#F8F9FA"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/start_selling"
-            android:layout_width="120dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="270dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="7dp"
-            android:padding="0dp"
-            android:background="@drawable/start_selling"
-            tools:ignore="HardcodedText"
-            android:text="START SELLING"/>
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/selltemp"
+            android:elevation="10dp"
+            tools:ignore="RtlHardcoded">
 
-    </FrameLayout>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="124dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:text="Are you a seller ? Register now and start selling your products online !"
+                android:textColor="#F8F9FA"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                tools:ignore="HardcodedText" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout4"
-        android:layout_width="395dp"
-        android:layout_height="680dp"
-        android:background="@drawable/mysearch"
-        android:elevation="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="268dp">
+            <Button
+                android:id="@+id/start_selling"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/start_selling"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="START SELLING"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText,RtlCompat" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="197dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="105dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginEnd="104dp"
-            android:text="Products by category"
-            android:textColor="#39404a"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:fontFamily="serif"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
+        </FrameLayout>
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/brassica_banner"
-            android:layout_width="170dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="40dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/brassica_bg"
-            android:elevation="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/brassica"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
-            app:shapeAppearanceOverlay="@style/roundimageview1"
-            tools:ignore="ImageContrastCheck" />
-
-
-        <TextView
-            android:id="@+id/textView5"
+        <FrameLayout
+            android:id="@+id/frameLayout4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="161dp"
-            android:text="Brassica"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/mysearch"
+            android:elevation="10dp">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/leafy_greens_banner"
-            android:layout_width="170dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="207dp"
-            android:layout_marginTop="40dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/brassica_bg"
-            android:elevation="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/leafy_banner"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
-            app:shapeAppearanceOverlay="@style/roundimageview1"
-            tools:ignore="ImageContrastCheck" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="3dp"
+                android:text="Products by category"
+                android:textAlignment="center"
+                android:textColor="#39404a"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="serif"
+                tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="241dp"
-            android:layout_marginTop="161dp"
-            android:text="Leafy Greens"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/fish_banner"
-            android:layout_width="170dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="200dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/brassica_bg"
-            android:elevation="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/fish_thumb"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
-            app:shapeAppearanceOverlay="@style/roundimageview1"
-            tools:ignore="ImageContrastCheck" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/brassica_banner"
+                android:layout_width="170dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="40dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/brassica_bg"
+                android:elevation="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/brassica"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:shapeAppearanceOverlay="@style/roundimageview1"
+                tools:ignore="ImageContrastCheck" />
 
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="85dp"
-            android:layout_marginTop="320dp"
-            android:text="Fish"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="161dp"
+                android:text="Brassica"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114"
+                tools:ignore="HardcodedText" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/fruit_veg_banner"
-            android:layout_width="170dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="207dp"
-            android:layout_marginTop="200dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/brassica_bg"
-            android:elevation="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/fruit_vegetables_banner"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
-            app:shapeAppearanceOverlay="@style/roundimageview1"
-            tools:ignore="ImageContrastCheck" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/leafy_greens_banner"
+                android:layout_width="170dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/brassica_bg"
+                android:elevation="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/leafy_banner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:shapeAppearanceOverlay="@style/roundimageview1"
+                tools:ignore="ImageContrastCheck" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="229dp"
-            android:layout_marginTop="320dp"
-            android:text="Fruit Vegetables"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="241dp"
+                android:layout_marginTop="161dp"
+                android:text="Leafy Greens"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114"
+                tools:ignore="HardcodedText" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/gourds_squashes_banner"
-            android:layout_width="170dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="362dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/brassica_bg"
-            android:elevation="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/gourds_quashes"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
-            app:shapeAppearanceOverlay="@style/roundimageview1"
-            tools:ignore="ImageContrastCheck" />
-
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="483dp"
-            android:text="Gourds and Squashes"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/roots_tubers_banner"
-            android:layout_width="170dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="207dp"
-            android:layout_marginTop="362dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/brassica_bg"
-            android:elevation="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/roots_and_tubers_banner"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
-            app:shapeAppearanceOverlay="@style/roundimageview1"
-            tools:ignore="ImageContrastCheck" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="224dp"
-            android:layout_marginTop="483dp"
-            android:text="Roots And Tubers"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/pods_seeds_banner"
-            android:layout_width="170dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="525dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/brassica_bg"
-            android:elevation="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/pods_and_seeds_banner"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
-            app:shapeAppearanceOverlay="@style/roundimageview1"
-            tools:ignore="ImageContrastCheck" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fish_banner"
+                android:layout_width="170dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/brassica_bg"
+                android:elevation="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fish_thumb"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:shapeAppearanceOverlay="@style/roundimageview1"
+                tools:ignore="ImageContrastCheck" />
 
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="42dp"
-            android:layout_marginTop="646dp"
-            android:text="Pods and Seeds"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="320dp"
+                android:text="Fish"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114"
+                tools:ignore="HardcodedText" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/stems_banner"
-            android:layout_width="170dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="207dp"
-            android:layout_marginTop="525dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/brassica_bg"
-            android:elevation="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/stems_banner"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027"
-            app:shapeAppearanceOverlay="@style/roundimageview1"
-            tools:ignore="ImageContrastCheck" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fruit_veg_banner"
+                android:layout_width="170dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="200dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/brassica_bg"
+                android:elevation="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fruit_vegetables_banner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:shapeAppearanceOverlay="@style/roundimageview1"
+                tools:ignore="ImageContrastCheck" />
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="265dp"
-            android:layout_marginTop="646dp"
-            android:text="Stems"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114"
-            tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="229dp"
+                android:layout_marginTop="320dp"
+                android:text="Fruit Vegetables"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114"
+                tools:ignore="HardcodedText" />
 
-    </FrameLayout>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/gourds_squashes_banner"
+                android:layout_width="170dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="362dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/brassica_bg"
+                android:elevation="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gourds_quashes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:shapeAppearanceOverlay="@style/roundimageview1"
+                tools:ignore="ImageContrastCheck" />
 
 
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="483dp"
+                android:text="Gourds and Squashes"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114"
+                tools:ignore="HardcodedText" />
 
-</LinearLayout>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/roots_tubers_banner"
+                android:layout_width="170dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="362dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/brassica_bg"
+                android:elevation="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/roots_and_tubers_banner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:shapeAppearanceOverlay="@style/roundimageview1"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="224dp"
+                android:layout_marginTop="483dp"
+                android:text="Roots And Tubers"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pods_seeds_banner"
+                android:layout_width="170dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="525dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/brassica_bg"
+                android:elevation="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pods_and_seeds_banner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:shapeAppearanceOverlay="@style/roundimageview1"
+                tools:ignore="ImageContrastCheck" />
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="646dp"
+                android:layout_marginBottom="20dp"
+                android:text="Pods and Seeds"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/stems_banner"
+                android:layout_width="170dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="525dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/brassica_bg"
+                android:elevation="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stems_banner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:shapeAppearanceOverlay="@style/roundimageview1"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="265dp"
+                android:layout_marginTop="646dp"
+                android:text="Stems"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                tools:ignore="HardcodedText" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
 
 </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

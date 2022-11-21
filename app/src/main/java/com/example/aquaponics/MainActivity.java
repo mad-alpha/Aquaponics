@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static int SPLASH_SCREEN = 2500;
 
+
     ImageView imageView4;
     TextView heading;
     Animation top, bottom;

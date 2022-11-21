@@ -45,7 +45,44 @@
         </activity>
         <activity
             android:name=".Homepage"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".LoginActivity">
+
+        </activity>
+        <activity
+            android:name=".CustomerProfile"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Brassica"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".LeafyGreens"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Fish"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".FruitVeg"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".PodsAndSeeds"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
 
         </activity>
     </application>

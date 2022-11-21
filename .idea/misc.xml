@@ -4,32 +4,88 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.10847628657921292" />
+        <entry key="app/src/main/res/drawable/add_address_button.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/brassica_bg.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/btn_drop.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/btn_dropdown.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/circles.xml" value="0.1845" />
+        <entry key="app/src/main/res/drawable/circles2.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/circles3.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/circles4.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/dotted.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/edit_text_username.xml" value="0.1855" />
+        <entry key="app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_account_circle_25.xml" value="0.1575" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_baseline_alternate_email_24.xml" value="0.1575" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1575" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_circle_right_24.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_indeterminate_check_box_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_baseline_link_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.1575" />
+        <entry key="app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_baseline_phone_android_24.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_shopping_basket_24.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_baseline_supervised_user_circle_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_outline_circle_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/in_stock.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/layout_border.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/mybutton.xml" value="0.2345" />
         <entry key="app/src/main/res/drawable/mysearch.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/out_of_stock.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/selltemp.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/shape.xml" value="0.1855" />
         <entry key="app/src/main/res/drawable/shape1.xml" value="0.1855" />
+        <entry key="app/src/main/res/drawable/shape_green.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/shape_grey.xml" value="0.1575" />
+        <entry key="app/src/main/res/drawable/spinner_background.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/start_selling.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/your_rounded_shape.xml" value="0.169" />
         <entry key="app/src/main/res/font/bungee.xml" value="0.27479949345715493" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.16295928955078126" />
-        <entry key="app/src/main/res/layout/activity_loginseller.xml" value="0.15020263424518743" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_loginseller.xml" value="0.20760619869831243" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.17395983709805252" />
-        <entry key="app/src/main/res/layout/activity_registrationseller.xml" value="0.15020263424518743" />
+        <entry key="app/src/main/res/layout/activity_registrationseller.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/basil_leafy_greens.xml" value="0.2523522215961849" />
+        <entry key="app/src/main/res/layout/beans_pods_and_seeds.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/bok_choy_leafy_greens.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/brassica.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/cabbage.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/cabbage_brassica.xml" value="0.23950714111328122" />
         <entry key="app/src/main/res/layout/category_product.xml" value="0.18359020852221214" />
-        <entry key="app/src/main/res/layout/homepage.xml" value="0.2208647699433895" />
+        <entry key="app/src/main/res/layout/common_carp_fish.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/customer_add_address.xml" value="0.2103569823383724" />
+        <entry key="app/src/main/res/layout/customer_address_listing.xml" value="0.22556389151805992" />
+        <entry key="app/src/main/res/layout/customer_order_listing.xml" value="0.19428571428571428" />
+        <entry key="app/src/main/res/layout/customer_order_single_page.xml" value="0.20798797607421873" />
+        <entry key="app/src/main/res/layout/customer_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fish.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/fruit_veg.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/hamburger.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/header_file.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/homepage.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/kale_leafy_greens.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/leafy_greens.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/lettuce_leafy_greens.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/out_of_stock.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/pods_and_seeds.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/rohu_fish.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/search_result_page.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/strawberry_fv.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/tomato_fv.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/sidemenu.xml" value="0.2543822146216332" />
       </map>
     </option>
   </component>
