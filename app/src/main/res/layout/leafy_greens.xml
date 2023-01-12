@@ -25,6 +25,7 @@
                 android:elevation="10dp">
 
                 <TextView
+                    android:id="@+id/hamburger"
                     android:layout_width="49dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -55,6 +56,7 @@
                     tools:ignore="ImageContrastCheck" />
 
                 <TextView
+                    android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
@@ -136,7 +138,7 @@
                 android:layout_marginEnd="10dp">
 
                 <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/brassica_banner"
+                    android:id="@+id/kale_banner"
                     android:layout_width="wrap_content"
                     android:layout_height="160dp"
                     android:layout_marginStart="10dp"
@@ -493,15 +495,15 @@
                     android:layout_height="35dp"
                     android:layout_gravity="end"
                     android:layout_marginStart="20dp"
-                    android:layout_marginEnd="18dp"
                     android:layout_marginTop="125dp"
+                    android:layout_marginEnd="18dp"
                     android:background="@drawable/circles"
                     android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
                     android:paddingTop="0dp"
+                    android:paddingRight="20dp"
                     android:paddingBottom="0dp"
-                    android:textColor="#FFFFFF"
                     android:text="Add To Cart"
+                    android:textColor="#FFFFFF"
                     tools:ignore="HardcodedText" />
 
             </FrameLayout>

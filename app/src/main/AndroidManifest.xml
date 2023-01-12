@@ -85,6 +85,96 @@
             android:parentActivityName=".Homepage">
 
         </activity>
+        <activity
+            android:name=".Basil_leafy_green"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Beans"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Bok_choy_leafy_green"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Cabbage"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Common_carp_fish"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Customer_add_address"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Customer_address_listing"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Customer_order_listing"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Customer_order_single_page"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".hamburger"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Kale_leafy_green"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Lettuce_leafy_green"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Rohu_fish"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Strawberry_fruitVeg"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
+        <activity
+            android:name=".Tomato_fruitVeg"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
     </application>
 
 </manifest>

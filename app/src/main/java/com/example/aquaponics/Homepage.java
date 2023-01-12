@@ -4,20 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import com.google.android.material.navigation.NavigationView;
 
 public class Homepage extends AppCompatActivity {
 
-    TextView profile, home, Brassica, Fish, LeafyGreens, FruitVeg, PodsAndSeeds;
+    TextView profile, home, Brassica, Fish, LeafyGreens, FruitVeg, PodsAndSeeds, hamburger, cart;
     Button start_selling;
     com.google.android.material.imageview.ShapeableImageView brassica, fish, leafy_greens, fruit_veg, pods_and_seeds;
 
@@ -39,6 +32,8 @@ public class Homepage extends AppCompatActivity {
         FruitVeg = findViewById(R.id.textView8);
         pods_and_seeds = findViewById(R.id.pods_seeds_banner);
         PodsAndSeeds = findViewById(R.id.textView11);
+        hamburger = findViewById(R.id.hamburger);
+        cart = findViewById(R.id.imageView3);
 
 
         profile.setOnClickListener(new View.OnClickListener() {
@@ -129,6 +124,20 @@ public class Homepage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Homepage.this,PodsAndSeeds.class));
+            }
+        });
+
+        hamburger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Homepage.this,hamburger.class));
+            }
+        });
+
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Homepage.this, Customer_order_listing.class));
             }
         });
     }

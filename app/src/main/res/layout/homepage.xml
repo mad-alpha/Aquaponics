@@ -28,7 +28,8 @@
         android:elevation="10dp">
 
         <TextView
-            android:layout_width="49dp"
+            android:id="@+id/hamburger"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="6dp"
@@ -58,6 +59,7 @@
             tools:ignore="ImageContrastCheck" />
 
         <TextView
+            android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
