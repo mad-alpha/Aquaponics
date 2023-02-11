@@ -47,16 +47,18 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, Homepage.class));
                 requestQueue.add(new StringRequest(Request.Method.POST,
                         Constants.HOST_URL + "/api/login",
                         response -> {
-//                            Log.d("myapp_debug", response);
+                            Log.d("myapp_debug", response);
                             startActivity(new Intent(LoginActivity.this, Homepage.class));
                         },
                         error -> {
                             Log.e("myapp_error", error.toString());
                             error.printStackTrace();
                             Toast.makeText(LoginActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(LoginActivity.this, Homepage.class));
                         }) {
                         @Override
                         protected Map<String,String> getParams(){
