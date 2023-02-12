@@ -20,7 +20,7 @@ public class hamburger extends AppCompatActivity {
 
         back = findViewById(R.id.back);
         home = findViewById(R.id.home);
-        profile = findViewById(R.id.profile);
+        profile = findViewById(R.id.profile_brassica);
         hamburger = findViewById(R.id.hamburger);
         cart = findViewById(R.id.imageView);
 

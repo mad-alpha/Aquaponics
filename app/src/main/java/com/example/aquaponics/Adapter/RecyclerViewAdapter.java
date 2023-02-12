@@ -46,6 +46,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 .get()
                 .load(homepageProduct.getImage())
                 .fit()
+                .placeholder(R.drawable.placeholder_image)
                 .into(holder.imageView);
         holder.textView.setText(homepageProduct.getName());
     }

@@ -75,11 +75,12 @@ public class SingleProduct extends AppCompatActivity {
                         productOverview.setText(getProductResponse.getData().getDetails());
                         addToCart.setEnabled(getProductResponse.getData().getIs_available() == 1);
                         productUnitDescription.setText(getProductResponse.getData().getUnit_desc());
-//                        Picasso
-//                                .get()
-//                                .load(getProductResponse.getData().getLarge_picture_url())
-//                                .fit()
-//                                .into(productBanner);
+                        Picasso
+                                .get()
+                                .load(getProductResponse.getData().getLarge_picture_url())
+                                .fit()
+                                .placeholder(R.drawable.placeholder_image)
+                                .into(productBanner);
                     }
                 },
                 error -> {
@@ -120,6 +121,17 @@ public class SingleProduct extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SingleProduct.this, hamburger.class));
+            }
+        });
+
+        addToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(addToCart.isEnabled()){
+                    startActivity(new Intent(SingleProduct.this, Customer_order_listing.class));
+                }else{
+                    Toast.makeText(SingleProduct.this,"Out of Stock", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

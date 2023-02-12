@@ -61,7 +61,6 @@ public class Homepage extends AppCompatActivity {
                     if(Objects.nonNull(getProductsResponseArray) && Objects.nonNull(getProductsResponseArray.getData())) {
                         for(int i = 0; i < getProductsResponseArray.getData().length ; ++i) {
                             ProductDetails productDetails = getProductsResponseArray.getData()[i];
-                            Log.d("myapp_debug", "Aakash id populated is -> " + productDetails.getId());
                             homepageProductArrayList.add(
                                     new HomepageProduct(productDetails.getId(), productDetails.getSmall_picture_url(), productDetails.getName())
                             );
