@@ -4,23 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.aquaponics.Adapter.RecyclerViewAdapter;
-import com.example.aquaponics.Model.GetProductsResponse;
+import com.example.aquaponics.Model.GetProductsResponseArray;
 import com.example.aquaponics.Model.HomepageProduct;
 import com.example.aquaponics.Model.ProductDetails;
 import com.google.gson.Gson;
@@ -60,10 +57,11 @@ public class Homepage extends AppCompatActivity {
         requestQueue.add(new StringRequest(Request.Method.POST,
                 Constants.HOST_URL + "/api/products",
                 response -> {
-                    GetProductsResponse getProductsResponse = gson.fromJson(response, GetProductsResponse.class);
-                    if(Objects.nonNull(getProductsResponse) && Objects.nonNull(getProductsResponse.getData())) {
-                        for(int i = 0 ; i < getProductsResponse.getData().length ; ++i) {
-                            ProductDetails productDetails = getProductsResponse.getData()[i];
+                    GetProductsResponseArray getProductsResponseArray = gson.fromJson(response, GetProductsResponseArray.class);
+                    if(Objects.nonNull(getProductsResponseArray) && Objects.nonNull(getProductsResponseArray.getData())) {
+                        for(int i = 0; i < getProductsResponseArray.getData().length ; ++i) {
+                            ProductDetails productDetails = getProductsResponseArray.getData()[i];
+                            Log.d("myapp_debug", "Aakash id populated is -> " + productDetails.getId());
                             homepageProductArrayList.add(
                                     new HomepageProduct(productDetails.getId(), productDetails.getSmall_picture_url(), productDetails.getName())
                             );

@@ -1,7 +1,7 @@
 package com.example.aquaponics.Adapter;
 
 import android.content.Context;
-import android.net.Uri;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aquaponics.Model.HomepageProduct;
 import com.example.aquaponics.R;
+import com.example.aquaponics.SingleProduct;
+import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -39,7 +41,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         HomepageProduct homepageProduct = homepageProductList.get(position);
 
-        holder.id = homepageProduct.getId();
+        holder.idTextView.setText(String.valueOf(homepageProduct.getId()));
         Picasso
                 .get()
                 .load(homepageProduct.getImage())
@@ -54,7 +56,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public class ViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener {
-        private Integer id;
+        private TextView idTextView;
         private ImageView imageView;
         private TextView textView;
 
@@ -64,11 +66,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             imageView = itemView.findViewById(R.id.imageView);
             textView = itemView.findViewById(R.id.textView);
+            idTextView = itemView.findViewById(R.id.idTextView);
         }
 
         @Override
         public void onClick(View view) {
-            Log.d("myapp_debug", "");
+            Intent intent = new Intent(view.getContext(), SingleProduct.class);
+            intent.putExtra("product_id", ((TextView)view.findViewById(R.id.idTextView)).getText().toString());
+            view.getContext().startActivity(intent);
         }
     }
 }

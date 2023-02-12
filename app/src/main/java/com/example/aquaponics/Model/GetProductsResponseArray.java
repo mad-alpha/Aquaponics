@@ -1,11 +1,11 @@
 package com.example.aquaponics.Model;
 
-public class GetProductsResponse {
+public class GetProductsResponseArray {
     private ProductDetails[] data;
 
-    public GetProductsResponse(){}
+    public GetProductsResponseArray(){}
 
-    public GetProductsResponse(ProductDetails[] productDetails) {
+    public GetProductsResponseArray(ProductDetails[] productDetails) {
         this.data = productDetails;
     }
 
