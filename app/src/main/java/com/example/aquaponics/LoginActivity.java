@@ -58,7 +58,6 @@ public class LoginActivity extends AppCompatActivity {
                             Log.e("myapp_error", error.toString());
                             error.printStackTrace();
                             Toast.makeText(LoginActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this, Homepage.class));
                         }) {
                         @Override
                         protected Map<String,String> getParams(){
