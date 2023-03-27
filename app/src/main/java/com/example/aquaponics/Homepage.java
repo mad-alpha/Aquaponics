@@ -17,7 +17,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.aquaponics.Adapter.RecyclerViewAdapter;
-import com.example.aquaponics.Model.GetProductsResponseArray;
+import com.example.aquaponics.Model.Category;
+import com.example.aquaponics.Model.GetCategoriesResponseArray;
 import com.example.aquaponics.Model.HomepageProduct;
 import com.example.aquaponics.Model.ProductDetails;
 import com.google.gson.Gson;
@@ -55,14 +56,14 @@ public class Homepage extends AppCompatActivity {
         cart = findViewById(R.id.imageView3);
 
         requestQueue.add(new StringRequest(Request.Method.POST,
-                Constants.HOST_URL + "/api/products",
+                Constants.HOST_URL + "/api/categories",
                 response -> {
-                    GetProductsResponseArray getProductsResponseArray = gson.fromJson(response, GetProductsResponseArray.class);
-                    if(Objects.nonNull(getProductsResponseArray) && Objects.nonNull(getProductsResponseArray.getData())) {
-                        for(int i = 0; i < getProductsResponseArray.getData().length ; ++i) {
-                            ProductDetails productDetails = getProductsResponseArray.getData()[i];
+                    GetCategoriesResponseArray getCategoriesResponseArray = gson.fromJson(response, GetCategoriesResponseArray.class);
+                    if(Objects.nonNull(getCategoriesResponseArray) && Objects.nonNull(getCategoriesResponseArray.getData())) {
+                        for(int i = 0; i < getCategoriesResponseArray.getData().length ; ++i) {
+                            Category category = getCategoriesResponseArray.getData()[i];
                             homepageProductArrayList.add(
-                                    new HomepageProduct(productDetails.getId(), productDetails.getSmall_picture_url(), productDetails.getName())
+                                    new HomepageProduct(category.getId(), category.getSmall_picture_url(), category.getName())
                             );
                         }
                     }
