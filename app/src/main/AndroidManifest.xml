@@ -182,6 +182,12 @@
             android:parentActivityName=".Homepage">
 
         </activity>
+        <activity
+            android:name=".Products"
+            android:exported="true"
+            android:parentActivityName=".Homepage">
+
+        </activity>
     </application>
 
 </manifest>

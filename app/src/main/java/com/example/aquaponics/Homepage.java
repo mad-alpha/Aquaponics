@@ -16,11 +16,10 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.aquaponics.Adapter.RecyclerViewAdapter;
+import com.example.aquaponics.Adapter.HomepageCategoryRecyclerViewAdapter;
 import com.example.aquaponics.Model.Category;
 import com.example.aquaponics.Model.GetCategoriesResponseArray;
-import com.example.aquaponics.Model.HomepageProduct;
-import com.example.aquaponics.Model.ProductDetails;
+import com.example.aquaponics.Model.HomepageCategory;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -31,8 +30,8 @@ import java.util.Objects;
 public class Homepage extends AppCompatActivity {
     Gson gson;
     RecyclerView recyclerView;
-    RecyclerViewAdapter recyclerViewAdapter;
-    ArrayList<HomepageProduct> homepageProductArrayList;
+    HomepageCategoryRecyclerViewAdapter homepageCategoryRecyclerViewAdapter;
+    ArrayList<HomepageCategory> homepageCategoryArrayList;
     RequestQueue requestQueue;
     TextView profile, home, hamburger, cart;
     Button start_selling;
@@ -47,7 +46,7 @@ public class Homepage extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        homepageProductArrayList = new ArrayList<>();
+        homepageCategoryArrayList = new ArrayList<>();
 
         profile = findViewById(R.id.profile);
         home = findViewById(R.id.home);
@@ -62,13 +61,13 @@ public class Homepage extends AppCompatActivity {
                     if(Objects.nonNull(getCategoriesResponseArray) && Objects.nonNull(getCategoriesResponseArray.getData())) {
                         for(int i = 0; i < getCategoriesResponseArray.getData().length ; ++i) {
                             Category category = getCategoriesResponseArray.getData()[i];
-                            homepageProductArrayList.add(
-                                    new HomepageProduct(category.getId(), category.getSmall_picture_url(), category.getName())
+                            homepageCategoryArrayList.add(
+                                    new HomepageCategory(category.getId(), category.getSmall_picture_url(), category.getName())
                             );
                         }
                     }
-                    recyclerViewAdapter = new RecyclerViewAdapter(Homepage.this, homepageProductArrayList);
-                    recyclerView.setAdapter(recyclerViewAdapter);
+                    homepageCategoryRecyclerViewAdapter = new HomepageCategoryRecyclerViewAdapter(Homepage.this, homepageCategoryArrayList);
+                    recyclerView.setAdapter(homepageCategoryRecyclerViewAdapter);
                 },
                 error -> {
                     Log.e("myapp_error", error.toString());
