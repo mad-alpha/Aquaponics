@@ -57,6 +57,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.17395983709805252" />
         <entry key="app/src/main/res/layout/activity_registrationseller.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_single_product.xml" value="0.1243209360635186" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/layout/basil_leafy_greens.xml" value="0.2523522215961849" />
         <entry key="app/src/main/res/layout/beans_pods_and_seeds.xml" value="0.2535271483539974" />
@@ -76,11 +77,13 @@
         <entry key="app/src/main/res/layout/hamburger.xml" value="0.2535271483539974" />
         <entry key="app/src/main/res/layout/header_file.xml" value="0.2535271483539974" />
         <entry key="app/src/main/res/layout/homepage.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/homepage_product.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/layout/kale_leafy_greens.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/layout/leafy_greens.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/layout/lettuce_leafy_greens.xml" value="0.2535271483539974" />
         <entry key="app/src/main/res/layout/out_of_stock.xml" value="0.2535271483539974" />
         <entry key="app/src/main/res/layout/pods_and_seeds.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/product_card.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/layout/rohu_fish.xml" value="0.2535271483539974" />
         <entry key="app/src/main/res/layout/search_result_page.xml" value="0.2535271483539974" />
         <entry key="app/src/main/res/layout/strawberry_fv.xml" value="0.2535271483539974" />

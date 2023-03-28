@@ -47,7 +47,7 @@ public class Products extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
         categoryProductArrayList = new ArrayList<>();
 
         back = findViewById(R.id.back);
