@@ -2,7 +2,6 @@ package com.example.aquaponics.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,48 +11,47 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.aquaponics.Model.HomepageProduct;
+import com.example.aquaponics.Model.HomepageCategory;
+import com.example.aquaponics.Products;
 import com.example.aquaponics.R;
-import com.example.aquaponics.SingleProduct;
-import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>  {
+public class HomepageCategoryRecyclerViewAdapter extends RecyclerView.Adapter<HomepageCategoryRecyclerViewAdapter.ViewHolder>  {
 
     private Context context;
-    private List<HomepageProduct> homepageProductList;
+    private List<HomepageCategory> homepageCategoryList;
 
-    public RecyclerViewAdapter(Context context, List<HomepageProduct> homepageProductList) {
+    public HomepageCategoryRecyclerViewAdapter(Context context, List<HomepageCategory> homepageCategoryList) {
         this.context = context;
-        this.homepageProductList = homepageProductList;
+        this.homepageCategoryList = homepageCategoryList;
     }
 
     @NonNull
     @Override
-    public RecyclerViewAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public HomepageCategoryRecyclerViewAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.homepage_product, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        HomepageProduct homepageProduct = homepageProductList.get(position);
+        HomepageCategory homepageCategory = homepageCategoryList.get(position);
 
-        holder.idTextView.setText(String.valueOf(homepageProduct.getId()));
+        holder.idTextView.setText(String.valueOf(homepageCategory.getId()));
         Picasso
                 .get()
-                .load(homepageProduct.getImage())
+                .load(homepageCategory.getImage())
                 .fit()
                 .placeholder(R.drawable.placeholder_image)
                 .into(holder.imageView);
-        holder.textView.setText(homepageProduct.getName());
+        holder.textView.setText(homepageCategory.getName());
     }
 
     @Override
     public int getItemCount() {
-        return homepageProductList.size();
+        return homepageCategoryList.size();
     }
 
     public class ViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener {
@@ -72,8 +70,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(view.getContext(), SingleProduct.class);
-            intent.putExtra("product_id", ((TextView)view.findViewById(R.id.idTextView)).getText().toString());
+            Intent intent = new Intent(view.getContext(), Products.class);
+            intent.putExtra("category_id", ((TextView)view.findViewById(R.id.idTextView)).getText().toString());
+            intent.putExtra("category_name", ((TextView)view.findViewById(R.id.textView)).getText().toString());
             view.getContext().startActivity(intent);
         }
     }

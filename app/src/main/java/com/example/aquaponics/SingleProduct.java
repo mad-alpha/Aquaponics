@@ -59,7 +59,7 @@ public class SingleProduct extends AppCompatActivity {
 
 
         int productId = Integer.parseInt(getIntent().getStringExtra("product_id"));
-        Log.d("myapp_debug", "Aakash product id is -> " + Constants.HOST_URL + "/api/products/" + productId);
+//        Log.d("myapp_debug", "Aakash product id is -> " + Constants.HOST_URL + "/api/products/" + productId);
 
         requestQueue.add(new StringRequest(Request.Method.POST,
                 Constants.HOST_URL + "/api/products/" + productId,

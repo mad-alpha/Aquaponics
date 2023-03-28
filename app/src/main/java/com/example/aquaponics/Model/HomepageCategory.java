@@ -1,13 +1,13 @@
 package com.example.aquaponics.Model;
 
-public class HomepageProduct {
+public class HomepageCategory {
     private Integer id;
     private String image;
     private String name;
 
-    public HomepageProduct() {}
+    public HomepageCategory() {}
 
-    public HomepageProduct(Integer id, String image, String name) {
+    public HomepageCategory(Integer id, String image, String name) {
         this.id = id;
         this.image = image;
         this.name = name;
